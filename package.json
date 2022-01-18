@@ -1,0 +1,45 @@
+{
+  "name": "data-view",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "compress:font": "node scripts/compressFont.js"
+  },
+  "dependencies": {
+    "@fontsource/dseg7": "^4.5.0",
+    "@vueuse/core": "^7.5.3",
+    "animate.css": "^4.1.1",
+    "axios": "^0.24.0",
+    "cobe": "^0.4.1",
+    "dayjs": "^1.10.7",
+    "echarts": "^5.2.2",
+    "normalize.css": "^8.0.1",
+    "swiper": "^7.4.1",
+    "vue": "^3.2.25",
+    "vue-echarts": "^6.0.1"
+  },
+  "devDependencies": {
+    "@qianphong/eslint-config": "^0.0.7",
+    "@types/node": "^17.0.9",
+    "@vitejs/plugin-vue": "^2.0.1",
+    "eslint": "^8.7.0",
+    "fontmin": "^0.9.9",
+    "sass": "^1.48.0",
+    "typescript": "^4.5.4",
+    "unplugin-auto-import": "^0.5.11",
+    "unplugin-icons": "^0.13.0",
+    "unplugin-vue-components": "^0.17.13",
+    "vite": "^2.7.12",
+    "vue-tsc": "^0.30.5"
+  },
+  "eslintConfig": {
+    "extends": "@qianphong",
+    "rules": {
+      "@typescript-eslint/indent": [
+        "off"
+      ]
+    }
+  }
+}
