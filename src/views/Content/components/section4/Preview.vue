@@ -83,7 +83,7 @@ const items = [
       class="company-swiper"
       :modules="modules"
       direction="vertical"
-      :slides-per-view="4"
+      :slides-per-view="5"
       :autoplay="{
         delay: 2000,
         disableOnInteraction: false,

@@ -5,13 +5,12 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Card: typeof import('./../components/Card.vue')['default']
+    ClockDigital: typeof import('./../components/Clock/Digital.vue')['default']
     Cobe: typeof import('./../components/Cobe.vue')['default']
     Decorator: typeof import('./../components/Decorator.vue')['default']
-    DigitalClock: typeof import('./../components/DigitalClock.vue')['default']
     FullscreenToggle: typeof import('./../components/FullscreenToggle.vue')['default']
     IconCustomFullscreen: typeof import('~icons/custom/fullscreen')['default']
     IconCustomFullscreenExit: typeof import('~icons/custom/fullscreen-exit')['default']
-    IconCustomSpin: typeof import('~icons/custom/spin')['default']
   }
 }
 

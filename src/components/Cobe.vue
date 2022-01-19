@@ -3,8 +3,8 @@ import createGlobe from 'cobe'
 
 const canvas = ref<HTMLCanvasElement | undefined>()
 const size = {
-  height: 620,
-  width: 620,
+  height: 750,
+  width: 750,
 }
 tryOnMounted(() => {
   let phi = 0
@@ -31,10 +31,7 @@ tryOnMounted(() => {
 </script>
 
 <template>
-  <div
-    class="cobe"
-    :style="{ width: size.width + 'px', height: size.height + 'px' }"
-  >
+  <div class="cobe">
     <canvas ref="canvas" v-bind="size"></canvas>
   </div>
 </template>
@@ -42,8 +39,8 @@ tryOnMounted(() => {
 <style lang="scss">
 .cobe {
   position: absolute;
-  height: 600px;
-  width: 600px;
+  height: v-bind('size.height +  "px"');
+  width: v-bind('size.width +  "px"');
   top: 25px;
   left: 0;
   right: 0;
