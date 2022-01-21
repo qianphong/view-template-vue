@@ -7,14 +7,17 @@ import {
   TitleComponent,
   TooltipComponent,
 } from 'echarts/components'
+
 import {
   BarChart,
   EffectScatterChart,
   LineChart,
   LinesChart,
+  PictorialBarChart,
   PieChart,
   RadarChart,
 } from 'echarts/charts'
+
 use([
   CanvasRenderer,
   GridComponent,
@@ -23,10 +26,12 @@ use([
   TooltipComponent,
   GeoComponent,
   PieChart,
+  PictorialBarChart,
   LineChart,
   BarChart,
   RadarChart,
   LinesChart,
   EffectScatterChart,
 ])
+
 export const install: UserModule = () => {}

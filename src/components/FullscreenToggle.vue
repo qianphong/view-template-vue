@@ -9,7 +9,7 @@ const { isFullscreen, toggle } = useFullscreen(props.target)
 </script>
 
 <template>
-  <div class="fullscreen-toggle" @click="toggle">
+  <button class="fullscreen-toggle" @click="toggle">
     <template v-if="isFullscreen">
       <IconCustomFullscreenExit class="fullscreen-icon" />
       <span>退出全屏</span>
@@ -18,25 +18,27 @@ const { isFullscreen, toggle } = useFullscreen(props.target)
       <IconCustomFullscreen class="fullscreen-icon" />
       <span>全屏显示</span>
     </template>
-  </div>
+  </button>
 </template>
 
 <style lang="scss">
 .fullscreen-toggle {
   position: absolute;
   z-index: 99;
+  right: -82px;
+  top: 48px;
   width: 130px;
   height: 40px;
   padding: 0 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  right: -82px;
-  top: 48px;
   cursor: pointer;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: rgba(37, 99, 235, 0.8);
+  outline: none;
+  border: none;
   color: #fff;
   font-weight: bold;
   transition: right ease-in-out 0.3s;
