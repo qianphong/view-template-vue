@@ -1,4 +1,5 @@
 <script lang="ts" setup></script>
+
 <template>
   <div class="decorator">
     <div class="dot"></div>
@@ -7,6 +8,7 @@
     <div class="dot"></div>
   </div>
 </template>
+
 <style lang="scss">
 .decorator {
   display: flex;

@@ -4,8 +4,8 @@ import Preview from './section4/Preview.vue'
 </script>
 <template>
   <div class="section-4">
-    <AMap class="animate__animated animate__fadeInUp animate__fast" />
-    <Preview class="animate__animated animate__fadeInUp animate__fast" />
+    <AMap class="animated animate-fade-in-up" />
+    <Preview class="animated animate-fade-in-up" />
   </div>
 </template>
 <style lang="scss">

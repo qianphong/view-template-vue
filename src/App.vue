@@ -11,10 +11,8 @@ useScale(root)
   <div ref="wrapper" class="view-wrapper">
     <div ref="root" class="view-container">
       <FullscreenToggle :target="wrapper" />
-      <Cobe class="animate__animated animate__slideInDown animate__fast" />
-      <ViewHeader
-        class="animate__animated animate__slideInDown animate__fast"
-      />
+      <Cobe class="animated animate-slide-in-down" />
+      <ViewHeader class="animated animate-slide-in-down" />
       <ViewContent />
     </div>
   </div>
@@ -32,7 +30,7 @@ div {
   user-select: none;
   .view-container {
     background: {
-      image: url('@/assets/bg.png');
+      image: url('@/assets/images/bg.png');
       size: 100% 100%;
       repeat: no-repeat;
     }

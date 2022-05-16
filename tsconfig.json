@@ -1,18 +1,17 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["src/**/*", "src/**/*.vue", "types/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
-    "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": ["ESNext", "dom"],
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["vite/client", "unplugin-icons/types/vue3"],
+    "lib": ["DOM", "ESNext"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

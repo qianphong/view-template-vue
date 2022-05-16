@@ -10,17 +10,13 @@ import Section7 from './components/Section7.vue'
 
 <template>
   <div class="view-content">
-    <Section1 class="animate__animated animate__fadeInTopLeft animate__fast" />
-    <Section2 class="animate__animated animate__fadeInLeft animate__fast" />
-    <Section3
-      class="animate__animated animate__fadeInBottomLeft animate__fast"
-    />
+    <Section1 class="animated animate-fade-in-top-left" />
+    <Section2 class="animated animate-fade-in-left" />
+    <Section3 class="animated animate-fade-in-bottom-left" />
     <Section4 />
-    <Section5 class="animate__animated animate__fadeInTopRight animate__fast" />
-    <Section6 class="animate__animated animate__fadeInRight animate__fast" />
-    <Section7
-      class="animate__animated animate__fadeInBottomRight animate__fast"
-    />
+    <Section5 class="animated animate-fade-in-top-right" />
+    <Section6 class="animated animate-fade-in-right" />
+    <Section7 class="animated animate-fade-in-bottom-right" />
   </div>
 </template>
 

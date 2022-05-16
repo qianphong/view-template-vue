@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { type PropType } from 'vue'
-import { type MaybeElementRef } from '@vueuse/core'
+import type { PropType } from 'vue'
+import type { MaybeElementRef } from '@vueuse/core'
 
 const props = defineProps({
   target: { type: Object as PropType<MaybeElementRef> },

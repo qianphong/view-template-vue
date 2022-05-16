@@ -1,7 +1,8 @@
 <script lang="ts" setup></script>
+
 <template>
   <header class="view-header">
-    <div class="view-header-left"><ClockDigital /></div>
+    <div class="view-header-left"><DigitalClock /></div>
     <div class="view-header-middle">
       <Decorator />
       XXXX 数据可视化
@@ -19,7 +20,7 @@
     width: 1200px;
     margin: auto;
     background: {
-      image: url('@/assets/header.png');
+      image: url('@/assets/images/header.png');
       position: top center;
       repeat: no-repeat;
     }
