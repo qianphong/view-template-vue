@@ -2,6 +2,8 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import WindiCSS from 'vite-plugin-windicss'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
@@ -12,8 +14,12 @@ export default defineConfig({
   plugins: [
     vue(),
     WindiCSS(),
+    Pages(),
+    Layouts({
+      defaultLayout: 'default',
+    }),
     AutoImport({
-      imports: ['vue', '@vueuse/core'],
+      imports: ['vue', 'vue-router', '@vueuse/core'],
       dts: 'types/auto-imports.d.ts',
     }),
     Components({
@@ -32,8 +38,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'),
-      '#': resolve(__dirname, './types'),
+      '@': `${resolve(__dirname, './src')}`,
+      '#': `${resolve(__dirname, './types')}`,
     },
   },
 })

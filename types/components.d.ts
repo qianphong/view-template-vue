@@ -9,9 +9,11 @@ declare module '@vue/runtime-core' {
     Cobe: typeof import('./../src/components/Cobe.vue')['default']
     Decorator: typeof import('./../src/components/Decorator.vue')['default']
     DigitalClock: typeof import('./../src/components/DigitalClock.vue')['default']
-    FullscreenToggle: typeof import('./../src/components/FullscreenToggle.vue')['default']
+    Fullscreen: typeof import('./../src/components/Fullscreen.vue')['default']
     IconCustomFullscreen: typeof import('~icons/custom/fullscreen')['default']
     IconCustomFullscreenExit: typeof import('~icons/custom/fullscreen-exit')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
 
