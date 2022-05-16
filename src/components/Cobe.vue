@@ -8,7 +8,7 @@ const size = {
 }
 tryOnMounted(() => {
   let phi = 0
-  createGlobe(canvas.value, {
+  createGlobe(canvas.value!, {
     devicePixelRatio: 1,
     width: size.width,
     height: size.height,
@@ -22,7 +22,7 @@ tryOnMounted(() => {
     markerColor: [230 / 255, 7 / 255, 7 / 255],
     glowColor: [51 / 255, 170 / 255, 255 / 255],
     markers: [{ location: [31.746005, 120.803566], size: 0.15 }],
-    onRender: (state: any) => {
+    onRender: state => {
       state.phi = phi
       phi += 0.01
     },
@@ -31,20 +31,19 @@ tryOnMounted(() => {
 </script>
 
 <template>
-  <div class="cobe">
-    <canvas ref="canvas" v-bind="size"></canvas>
-  </div>
+  <canvas
+    ref="canvas"
+    class="cobe"
+    :style="{ width: `${size.width}px`, height: `${size.height}px` }"
+  ></canvas>
 </template>
 
 <style lang="scss">
 .cobe {
   position: absolute;
-  height: v-bind('size.height +  "px"');
-  width: v-bind('size.width +  "px"');
   top: 25px;
   left: 0;
   right: 0;
   margin: auto;
-  z-index: -1;
 }
 </style>
