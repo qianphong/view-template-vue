@@ -186,8 +186,7 @@ useIntervalFn(
   { immediateCallback: true },
 )
 </script>
+
 <template>
-  <div>
-    <VChart v-if="option" :option="option" autoresize />
-  </div>
+  <VChart v-if="option" :option="option" autoresize />
 </template>

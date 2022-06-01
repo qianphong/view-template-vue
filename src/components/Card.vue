@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="card" :class="{ border: border }">
+  <div class="card" :class="{ border }">
     <div v-if="title" class="card-header">
       {{ title }}
     </div>

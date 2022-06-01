@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     IconCustomFullscreenExit: typeof import('~icons/custom/fullscreen-exit')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollBoard: typeof import('./../src/components/ScrollBoard.vue')['default']
   }
 }
 

@@ -43,8 +43,9 @@ function getData() {
 
 useIntervalFn(getData, 1000 * 10, { immediateCallback: true })
 </script>
+
 <template>
-  <Card title="实时数据">
+  <Card title="实时数据1">
     <div class="state-list">
       <StateItem class="standby" :value="datas.standby" text="A A" />
       <StateItem class="work" :value="datas.work" text="B B" />

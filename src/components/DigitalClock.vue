@@ -4,6 +4,7 @@ import dayjs from 'dayjs'
 const now = useNow()
 const nowStr = computed(() => dayjs(now.value).format('YYYY-MM-DD HH:mm:ss'))
 </script>
+
 <template>
   <div class="font-dseg7">{{ nowStr }}</div>
 </template>

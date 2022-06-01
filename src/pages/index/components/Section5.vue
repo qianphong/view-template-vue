@@ -63,6 +63,7 @@ const option = computed<EChartsOption>(() => {
 })
 useIntervalFn(getData, 1000 * 10, { immediateCallback: true })
 </script>
+
 <template>
   <Card title="数据看板5">
     <VChart :option="option" autoresize />

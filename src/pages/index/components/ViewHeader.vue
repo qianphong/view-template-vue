@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <header class="view-header">
     <div class="view-header-left"><DigitalClock /></div>
