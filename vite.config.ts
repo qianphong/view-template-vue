@@ -11,6 +11,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
 export default defineConfig({
+  base: '/vue-view-template/',
   plugins: [
     vue(),
     WindiCSS(),
