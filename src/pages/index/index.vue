@@ -8,11 +8,19 @@ import Section5 from './components/Section5.vue'
 import Section6 from './components/Section6.vue'
 import Section7 from './components/Section7.vue'
 import Section8 from './components/Section8.vue'
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+import TestModal from './components/TestModal.vue'
+
+const modal = ref<InstanceType<typeof TestModal> | null>()
+function show(company: any) {
+  modal.value?.show()
+}
 </script>
 
 <template>
   <div class="view-container">
     <Cobe class="animated animate-slide-in-down" />
+    <TestModal ref="modal" />
     <ViewHeader class="animated animate-slide-in-down" />
     <div class="view-content grid grid-rows-3 grid-cols-7 gap-5">
       <div class="row-span-1 col-span-2">
@@ -30,7 +38,7 @@ import Section8 from './components/Section8.vue'
       <div class="row-span-1 col-span-2">
         <Section5 class="animated animate-fade-in-right" />
       </div>
-      <div class="row-span-1 col-span-2">
+      <div class="row-span-1 col-span-2" @click="show">
         <Section6 class="animated animate-fade-in-left" />
       </div>
       <div class="row-span-1 col-span-3">
