@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import IconCustomSpin from '~icons/custom/spin'
 import { createRandom } from '@/utils'
 
 const StateItem = defineComponent({
@@ -24,7 +23,7 @@ const StateItem = defineComponent({
         ),
         h('div', {}, this.text),
       ]),
-      h(IconCustomSpin, { class: 'state-item-icon' }),
+      h('div', { class: 'state-item-icon' }),
     ])
   },
 })

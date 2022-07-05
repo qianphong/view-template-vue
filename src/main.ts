@@ -4,8 +4,9 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 import generatedRouters from '~pages'
 
+import '@unocss/reset/tailwind.css'
 import '@/styles/main.scss'
-import 'virtual:windi.css'
+import 'uno.css'
 
 const app = createApp(App)
 const routes = setupLayouts(generatedRouters)

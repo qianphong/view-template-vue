@@ -11,11 +11,11 @@ const { isFullscreen, toggle } = useFullscreen(props.target)
 <template>
   <button class="fullscreen-toggle" @click="toggle">
     <template v-if="isFullscreen">
-      <IconCustomFullscreenExit class="fullscreen-icon" />
+      <i class="i-ant-design:fullscreen-exit-outlined fullscreen-icon"></i>
       <span>退出全屏</span>
     </template>
     <template v-else>
-      <IconCustomFullscreen class="fullscreen-icon" />
+      <i class="i-ant-design:fullscreen-outlined fullscreen-icon"></i>
       <span>全屏显示</span>
     </template>
   </button>
