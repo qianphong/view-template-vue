@@ -17,5 +17,4 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     ScrollBoard: typeof import('./../src/components/ScrollBoard.vue')['default']
   }
-
 }
