@@ -51,6 +51,12 @@ function show(company: any) {
   </div>
 </template>
 
+<route lang="yaml">
+name: Home
+meta:
+  title: 首页
+</route>
+
 <style lang="scss">
 .view-container {
   height: 100%;
