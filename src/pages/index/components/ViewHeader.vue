@@ -1,9 +1,13 @@
+<script lang="ts" setup>
+const title = import.meta.env.VITE_APP_TITLE || 'XXXX'
+</script>
+
 <template>
   <header class="view-header">
     <div class="view-header-left"><DigitalClock /></div>
     <div class="view-header-middle">
       <Decorator />
-      XXXX 数据可视化
+      {{ title }}
       <Decorator />
     </div>
     <div class="view-header-right">因网络等因素，数据可能延迟！</div>
