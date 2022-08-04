@@ -17,6 +17,8 @@ const router = createRouter({
 app.use(router)
 app.mount('#app')
 
-Object.values(import.meta.globEager('./modules/*.ts')).forEach(i => {
-  i.install?.({ app, routes, router })
-})
+Object.values(import.meta.glob('./modules/*.ts', { eager: true })).forEach(
+  i => {
+    ;(i as { install?: UserModule }).install?.({ app, routes, router })
+  },
+)

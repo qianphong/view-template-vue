@@ -1,4 +1,4 @@
-const appTitle = import.meta.env.VITE_APP_TITLE || '项目'
+const appTitle = import.meta.env.VITE_APP_TITLE || '项目模板'
 
 function getPageTitle(title?: string) {
   return title ? `${title}-${appTitle}` : appTitle

@@ -7,6 +7,6 @@ declare global {
   type UserModule = (ctx: {
     app: App<Element>
     router: Router
-    route: RouteRecordRaw[]
+    routes: RouteRecordRaw[]
   }) => void
 }
