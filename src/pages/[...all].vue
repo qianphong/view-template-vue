@@ -3,6 +3,8 @@
 </template>
 
 <route lang="yaml">
+name: 404
 meta:
   layout: 404
+  title: 404
 </route>

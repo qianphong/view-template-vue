@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Unocss(),
-    Pages(),
+    Pages({ exclude: ['**/components/**', '**/**/*.ts'] }),
     Layouts({
       defaultLayout: 'default',
     }),
