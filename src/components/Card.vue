@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-defineProps({
-  title: String,
-  border: { type: Boolean, default: true },
+withDefaults(defineProps<{ title?: string; border?: boolean }>(), {
+  border: true,
 })
 </script>
 

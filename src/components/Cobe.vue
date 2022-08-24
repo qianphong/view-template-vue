@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import createGlobe from 'cobe'
 
-const canvas = ref<HTMLCanvasElement | undefined>()
+const canvas = ref<HTMLCanvasElement>()
 const size = {
   height: 750,
   width: 750,

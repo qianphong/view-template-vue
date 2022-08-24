@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ViewHeader from './components/ViewHeader.vue'
-import Section1 from './components/Section1.vue'
+import Section8 from './components/Section8.vue'
 import Section3 from './components/Section3.vue'
 import Section7 from './components/Section7.vue'
 </script>
@@ -16,7 +16,7 @@ import Section7 from './components/Section7.vue'
       <div class="row-span-1 col-span-2"></div>
       <div class="row-span-1 col-span-2"></div>
       <div class="row-span-1 col-span-2">
-        <Section1 class="animated animate-fade-in-top-left" />
+        <Section8 class="animated animate-fade-in-top-left" />
       </div>
       <div class="row-span-1 col-span-3">
         <Section7 class="animated animate-fade-in-up" />

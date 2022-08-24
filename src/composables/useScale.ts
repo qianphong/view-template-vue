@@ -8,9 +8,8 @@ import {
 
 export const useScale = (
   ele: MaybeRef<HTMLElement | undefined>,
-  opts: { h: number; w: number } = { h: 1080, w: 1920 },
+  { w, h } = { h: 1080, w: 1920 },
 ) => {
-  const { w, h } = opts
   tryOnMounted(() => {
     const root = unref(ele)
     if (root) {

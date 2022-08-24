@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-import type { PropType } from 'vue'
 import type { MaybeElementRef } from '@vueuse/core'
 
-const props = defineProps({
-  target: { type: Object as PropType<MaybeElementRef> },
-})
+const props = defineProps<{ target: MaybeElementRef }>()
+
+// 如果是嵌套在 iframe 中则隐藏全屏
+const isIframe = window.self !== window.top
+
 const { isFullscreen, toggle } = useFullscreen(props.target)
 </script>
 
 <template>
-  <button class="fullscreen-toggle" @click="toggle">
+  <button class="fullscreen-toggle" @click="toggle" v-if="!isIframe">
     <template v-if="isFullscreen">
       <i class="i-ant-design:fullscreen-exit-outlined fullscreen-icon"></i>
       <span>退出全屏</span>

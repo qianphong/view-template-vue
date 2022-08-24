@@ -2,8 +2,10 @@
 import type { PropType } from 'vue'
 import { Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+
 import 'swiper/css'
 import 'swiper/css/autoplay'
+
 defineProps({
   perView: { type: Number, default: 5 },
   list: { type: Array as PropType<any[]>, default: () => [] },
