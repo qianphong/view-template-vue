@@ -8,14 +8,7 @@ const emit = defineEmits<{
   (e: 'beforeClose'): void
 }>()
 
-const show = computed({
-  get() {
-    return props.show
-  },
-  set(val: boolean) {
-    emit('update:show', val)
-  },
-})
+const show = useVModel(props, 'show', emit)
 
 function close() {
   if (show.value) {
