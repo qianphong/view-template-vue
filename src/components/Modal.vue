@@ -22,7 +22,7 @@ function close() {
   <Transition appear name="modal">
     <div v-show="show" class="modal" @click="close">
       <div class="modal-inner" :class="customClass" @click.stop>
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </Transition>

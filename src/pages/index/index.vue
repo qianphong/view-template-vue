@@ -10,11 +10,11 @@ import Section7 from './components/Section7.vue'
     <Cobe class="animated animate-slide-in-down" />
     <ViewHeader class="animated animate-slide-in-down" />
     <div class="view-content grid grid-rows-3 grid-cols-7 gap-5">
-      <div class="row-span-1 col-span-2"></div>
-      <div class="row-span-2 col-span-3"></div>
-      <div class="row-span-1 col-span-2"></div>
-      <div class="row-span-1 col-span-2"></div>
-      <div class="row-span-1 col-span-2"></div>
+      <div class="row-span-1 col-span-2" />
+      <div class="row-span-2 col-span-3" />
+      <div class="row-span-1 col-span-2" />
+      <div class="row-span-1 col-span-2" />
+      <div class="row-span-1 col-span-2" />
       <div class="row-span-1 col-span-2">
         <Section8 class="animated animate-fade-in-top-left" />
       </div>

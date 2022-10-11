@@ -16,7 +16,7 @@ const modules = [Autoplay]
 <template>
   <div class="scroll-board">
     <div class="scroll-board-header">
-      <slot name="header"></slot>
+      <slot name="header" />
     </div>
     <Swiper
       :modules="modules"
@@ -29,7 +29,7 @@ const modules = [Autoplay]
       }"
     >
       <SwiperSlide v-for="(item, index) in list" :key="index">
-        <slot :item="item" :index="index"></slot>
+        <slot :item="item" :index="index" />
       </SwiperSlide>
     </Swiper>
   </div>

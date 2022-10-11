@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-import dayjs from 'dayjs'
-
-const now = useNow()
-const nowStr = computed(() => dayjs(now.value).format('YYYY-MM-DD HH:mm:ss'))
+const nowStr = useDateFormat(useNow(), 'YYYY-MM-DD HH:mm:ss')
 </script>
 
 <template>

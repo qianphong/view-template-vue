@@ -1,26 +1,28 @@
 <script lang="ts" setup>
 import type { MaybeElementRef } from '@vueuse/core'
+import { isIframe } from '@/utils/is'
 
 const props = defineProps<{ target: MaybeElementRef }>()
-
-// 如果是嵌套在 iframe 中则隐藏全屏
-const isIframe = window.self !== window.top
 
 const { isFullscreen, toggle } = useFullscreen(props.target)
 </script>
 
 <template>
-  <button class="fullscreen-toggle" @click="toggle" v-if="!isIframe">
+  <button v-if="!isIframe()" class="fullscreen-toggle" @click="toggle">
     <template v-if="isFullscreen">
       <img
         src="@/assets/icons/fullscreen-exit.png"
         class="fullscreen-icon"
-        alt=""
+        alt="退出"
       />
       <span>退出全屏</span>
     </template>
     <template v-else>
-      <img src="@/assets/icons/fullscreen.png" class="fullscreen-icon" alt="" />
+      <img
+        src="@/assets/icons/fullscreen.png"
+        class="fullscreen-icon"
+        alt="全屏"
+      />
       <span>全屏显示</span>
     </template>
   </button>

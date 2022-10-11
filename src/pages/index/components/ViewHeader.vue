@@ -4,7 +4,9 @@ const title = import.meta.env.VITE_APP_TITLE || 'XXXX'
 
 <template>
   <header class="view-header">
-    <div class="view-header-left"><DigitalClock /></div>
+    <div class="view-header-left">
+      <DigitalClock />
+    </div>
     <div class="view-header-middle">
       <Decorator />
       {{ title }}

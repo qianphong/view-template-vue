@@ -35,7 +35,7 @@ tryOnMounted(() => {
     ref="canvas"
     class="cobe"
     :style="{ width: `${size.width}px`, height: `${size.height}px` }"
-  ></canvas>
+  />
 </template>
 
 <style lang="scss">

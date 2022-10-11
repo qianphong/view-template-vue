@@ -1,7 +1,8 @@
 const appTitle = import.meta.env.VITE_APP_TITLE || '项目模板'
 
-function getPageTitle(title?: string) {
-  return title ? `${title}-${appTitle}` : appTitle
+function getPageTitle(pageTitle?: string) {
+  if (pageTitle) return `${pageTitle} - ${appTitle}`
+  return `${appTitle}`
 }
 
 export const install: UserModule = ({ router }) => {
