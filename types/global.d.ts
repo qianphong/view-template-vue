@@ -5,7 +5,7 @@ import type { EChartsOption as Option } from 'echarts'
 declare global {
   type EChartsOption = Option
   type UserModule = (ctx: {
-    app: App<Element>
+    app: App
     router: Router
     routes: RouteRecordRaw[]
   }) => void

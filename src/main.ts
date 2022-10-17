@@ -11,8 +11,9 @@ const app = createApp(App)
 const routes = setupLayouts(generatedRouters)
 const router = createRouter({
   routes,
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH),
 })
+
 app.use(router)
 app.mount('#app')
 
