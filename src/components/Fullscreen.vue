@@ -10,19 +10,11 @@ const { isFullscreen, toggle } = useFullscreen(props.target)
 <template>
   <button v-if="!isIframe()" class="fullscreen-toggle" @click="toggle">
     <template v-if="isFullscreen">
-      <img
-        src="@/assets/icons/fullscreen-exit.png"
-        class="fullscreen-icon"
-        alt="退出"
-      />
+      <div class="fullscreen-icon i-ant-design:fullscreen-exit-outlined" />
       <span>退出全屏</span>
     </template>
     <template v-else>
-      <img
-        src="@/assets/icons/fullscreen.png"
-        class="fullscreen-icon"
-        alt="全屏"
-      />
+      <div class="fullscreen-icon i-ant-design:fullscreen-outlined" />
       <span>全屏显示</span>
     </template>
   </button>
