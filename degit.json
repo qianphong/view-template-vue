@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": [".github", "degit.json"]
+    "files": [".github/workflows/deploy.yaml", "degit.json"]
   }
 ]
