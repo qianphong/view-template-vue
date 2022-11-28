@@ -6,6 +6,7 @@ import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import WebConfig from 'vite-plugin-web-config'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig(({ mode }) => {
@@ -16,10 +17,9 @@ export default defineConfig(({ mode }) => {
     plugins: [
       Vue(),
       UnoCSS(),
+      WebConfig(),
       Pages({ exclude: ['**/components/**', '**/**/*.ts'] }),
-      Layouts({
-        defaultLayout: 'default',
-      }),
+      Layouts(),
       AutoImport({
         imports: ['vue', 'vue-router', '@vueuse/core'],
         dts: 'types/auto-imports.d.ts',

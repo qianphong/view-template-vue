@@ -9,4 +9,11 @@ declare global {
     router: Router
     routes: RouteRecordRaw[]
   }) => void
+
+  type BasicResponse<T = any> = {
+    success: boolean
+    code: number
+    message: string
+    data: T
+  }
 }
