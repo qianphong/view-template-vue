@@ -6,6 +6,7 @@ import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
@@ -27,6 +28,10 @@ export default defineConfig(({ mode }) => {
         resolvers: [],
         directoryAsNamespace: true,
         dts: 'types/components.d.ts',
+      }),
+      visualizer({
+        filename: './node_modules/.cache/visualizer/stats.html',
+        open: true,
       }),
     ],
     resolve: {

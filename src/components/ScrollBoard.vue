@@ -9,6 +9,7 @@ import 'swiper/css/autoplay'
 defineProps({
   perView: { type: Number, default: 5 },
   list: { type: Array as PropType<any[]>, default: () => [] },
+  headerHeight: { type: Number, default: 40 },
 })
 const modules = [Autoplay]
 </script>
@@ -38,12 +39,12 @@ const modules = [Autoplay]
 <style lang="scss">
 .scroll-board {
   height: 100%;
+  --header-h: v-bind(`${headerHeight}px`);
   .scroll-board-header {
-    height: 32px;
-    box-shadow: inset 0 0 30px rgba(51, 170, 255, 0.7);
+    height: var(--header-h);
   }
   > .swiper {
-    height: calc(100% - 32px);
+    height: calc(100% - var(--header-h));
   }
 }
 </style>

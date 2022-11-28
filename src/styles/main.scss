@@ -1,9 +1,11 @@
-@import '@unocss/reset/tailwind.css';
+:root {
+  --primary-color: rgba(7, 74, 238, 1);
+}
 
 html {
   font-size: 16px;
 }
 
-:root {
-  --primary-color: rgba(7, 74, 238, 1);
+div {
+  box-sizing: border-box;
 }

@@ -6,6 +6,7 @@ const size = {
   height: 750,
   width: 750,
 }
+
 tryOnMounted(() => {
   let phi = 0
   createGlobe(canvas.value!, {
@@ -33,17 +34,6 @@ tryOnMounted(() => {
 <template>
   <canvas
     ref="canvas"
-    class="cobe"
     :style="{ width: `${size.width}px`, height: `${size.height}px` }"
   />
 </template>
-
-<style lang="scss">
-.cobe {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-</style>

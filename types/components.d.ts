@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Decorator: typeof import('./../src/components/Decorator.vue')['default']
     DigitalClock: typeof import('./../src/components/DigitalClock.vue')['default']
     Fullscreen: typeof import('./../src/components/Fullscreen.vue')['default']
+    Header: typeof import('./../src/components/Header.vue')['default']
     Modal: typeof import('./../src/components/Modal.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

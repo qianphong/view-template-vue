@@ -2,7 +2,16 @@
 import type { MaybeElementRef } from '@vueuse/core'
 import { isIframe } from '@/utils/is'
 
-const props = defineProps<{ target: MaybeElementRef }>()
+const props = withDefaults(
+  defineProps<{
+    target?: MaybeElementRef
+  }>(),
+  {
+    target() {
+      return document.body
+    },
+  },
+)
 
 const { isFullscreen, toggle } = useFullscreen(props.target)
 </script>

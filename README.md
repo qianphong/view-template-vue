@@ -1,1 +1,1 @@
-# Hi 👏
+# vue-view-template

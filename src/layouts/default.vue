@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { useScale } from '@/composables/useScale'
 
-const wrapper = ref<HTMLElement | undefined>()
 const root = ref<HTMLDivElement | undefined>()
 useScale(root)
 </script>
 
 <template>
-  <div ref="wrapper" class="view-wrapper">
+  <div class="view-wrapper">
     <div ref="root">
-      <Fullscreen :target="wrapper" />
+      <Fullscreen />
       <RouterView />
     </div>
   </div>
