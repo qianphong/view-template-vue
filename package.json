@@ -1,5 +1,5 @@
 {
-  "name": "vue-view-template",
+  "name": "view-template-vue",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
